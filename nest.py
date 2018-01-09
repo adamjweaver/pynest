@@ -115,6 +115,13 @@ class Nest:
 
         print "%0.1f" % temp
 
+    
+    def show_targettemp(self):
+        temp = self.status["shared"][self.serial]["target_temperature"]
+        temp = self.temp_out(temp)
+
+        print "%0.1f" % temp
+         
     def set_temperature(self, temp):
         temp = self.temp_in(temp)
 
