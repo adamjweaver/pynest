@@ -229,6 +229,8 @@ def main():
         n.show_status()
     elif (cmd == "curtemp"):
         n.show_curtemp()
+    elif (cmd == "tartemp"):
+        n.show_targettemp()
     elif (cmd == "curhumid"):
         print n.status["device"][n.serial]["current_humidity"]
     else:
